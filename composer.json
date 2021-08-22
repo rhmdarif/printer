@@ -1,0 +1,11 @@
+{
+    "name": "rhmdarif/printer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Rahmad Arif",
+            "email": "rahmadarif28080@gmail.com"
+        }
+    ],
+    "require": {}
+}
