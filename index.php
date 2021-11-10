@@ -1,5 +1,56 @@
 <?php
 $datas = json_decode(file_get_contents('php://input'), true);
+echo json_encode([
+        [
+            'type' => 'text',
+            'content' => 'ABCDE',
+            'option' => [
+                'bold' => 1,
+                'align' => 2,
+                'format' => 3,
+            ]
+        ],
+        [
+            'type' => 'image',
+            'path' => 'https://',
+            'option' => [
+                'align' => 2,
+            ]
+        ],
+        [
+            'type' => 'barcode',
+            'value' => 'ABCDE',
+            'option' => [
+                'width' => 1,
+                'height' => 2,
+                'align' => 3,
+            ]
+        ],
+        [
+            'type' => 'qr',
+            'value' => 'ABCDE',
+            'option' => [
+                'align' => 2,
+                'size' => 3,
+            ]
+        ],
+        [
+            'type' => 'emptyline',
+            'content' => '',
+            'option' => [
+                'bold' => 1,
+                'align' => 2,
+            ]
+        ],
+        [
+            'type' => 'multiline',
+            'content' => 'This text has<br />two lines',
+            'option' => [
+                'bold' => 1,
+                'align' => 2,
+            ]
+        ],
+    ]);
 /*
     [
         [
