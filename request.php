@@ -56,7 +56,8 @@ $data = json_encode([
         ],
     ]);
 
-    echo http($data);
+    echo $data;
+    // echo http($data);
 
 
     /*
